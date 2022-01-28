@@ -39,8 +39,8 @@ function App() {
           <button id="sqroot" className="btn-pad btn-first-row btn-op" name='√' >√</button>
           <button id="square" className="btn-pad btn-first-row btn-op" name='' >𝒙<sup>2</sup></button>
           <button id="inverse" className="btn-pad btn-first-row btn-op" name='' ><sup>1</sup>/<sub>𝒙</sub></button>
-          <button /* onclick="clearScr()" */id='clear' className="btn-pad btn-main btn-other" onClick={clear}>CE</button>
-          <button /* onclick="resetInput()" */ className="btn-pad btn-main btn-other" onClick={backspace}>C</button>
+          <button /* onclick="clear()" */id='clear' className="btn-pad btn-main btn-other" onClick={clear}>CE</button>
+          <button /* onclick="backspace()" */ className="btn-pad btn-main btn-other" onClick={backspace}>C</button>
           <button /* onclick="backspace()" */id='backspace' className="btn-pad btn-main btn-other" onClick={backspace} >⌫</button>
           <button id="divide" className="btn-pad btn-main btn-op" name='/' onClick={handleClick}>÷</button>
           <button className="btn-pad btn-main btn-num" name='7' onClick={handleClick}>7</button>
@@ -55,7 +55,7 @@ function App() {
           <button className="btn-pad btn-main btn-num" name='2' onClick={handleClick}>2</button>
           <button className="btn-pad btn-main btn-num" name='3' onClick={handleClick}>3</button>
           <button id="sum" className="btn-pad btn-main btn-op" name='+' onClick={handleClick}>+</button>
-          <button /* onclick="plusminus()" */ className="btn-pad btn-main btn-whatfuckingever" onClick={handleClick}>±</button>
+          <button className="btn-pad btn-main btn-whatfuckingever" onClick={handleClick}>±</button>
           <button className="btn-pad btn-main btn-num" name='0' onClick={handleClick}>0</button>
           <button className="btn-pad btn-main btn-num" name='.' onClick={handleClick}>.</button>
           <button id="result" className="btn-pad btn-main btn-op" onClick={calculate}>=</button>
